@@ -49,6 +49,28 @@ The following image shows a mock-up of the generated HTML’s appearance and fun
 
 The styling in the image is just an example, so feel free to add your own.
 
+## Description
+ * [Link to Video Demonstration]()
+
+When the user run the application with command, bash terminal will come up with questions needed for generating html of team profiles. It starts with questions for Team Manager's profile and user must provide inquired inputs.
+
+
+
+## How to Use
+The application will be invoked by using the following command (inside of readme_generator folder):
+
+```bash
+node index.js
+```
+
+
+
+## Credits
+* npm [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4) 
+* npm [jest package](https://www.npmjs.com/package//jest)
+* [Bootstrap Icons](https://icons.getbootstrap.com/)
+* Code to check if the value is number: https://stackoverflow.com/questions/1779013/check-if-string-contains-only-digits
+
 ## Getting Started
 
 This Challenge will combine many of the skills we've covered so far. In addition to the User Story and Acceptance Criteria, we’ve provided some guidelines to help get started.
