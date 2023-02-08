@@ -2,13 +2,11 @@
 
 ## Task
 
-Your task is to build a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. 
+This task is to build a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. 
 
-Because this Challenge will require the use of the `Inquirer` package, ensure that you install and use Inquirer version 8.2.4. To do so, use the following command in your project folder: `npm i inquirer@8.2.4`.
+In this challenge, `Inquirer(8.2.4)` npm package was used for inquirer function.
 
-Testing is key to making code maintainable, so you’ll also write a unit test for every part of your code and ensure that it passes each test.
-
-Because this application won’t be deployed, you’ll need to provide a link to a walkthrough video that demonstrates its functionality and all of the tests passing. You’ll need to submit a link to the video AND add it to the readme of your project.
+In order to make code maintainable, there are also unit tests for js class files using `jest` npm package.
 
 
 ## User Story
@@ -54,15 +52,45 @@ The styling in the image is just an example, so feel free to add your own.
 
 When the user run the application with command, bash terminal will come up with questions needed for generating html of team profiles. It starts with questions for Team Manager's profile and user must provide inquired inputs.
 
+![Initial run_Manager profile]()
 
+After the user provides Manager's profile, they are given options to add other team members (either engineer or intern) or to exit. If the user choose to add another member(s), just like Manager's profile, user needs to provide information for team member's profile.
+
+![options to add team member(s)]()
+
+Below are the information asked for each of the team members:
+
+  * Manager: Name, ID, email, office number
+  * Engineer: Name, ID, email, GitHub username (no @ needed)
+  * Intern: Name, ID, email, School name
+
+After providing all information, user can choose 'exit' to exit the app and generate html file for team profiles.  
+
+![Exit app]()
+![generated team profile html]()
 
 ## How to Use
-The application will be invoked by using the following command (inside of readme_generator folder):
+The application will be invoked by using the following command:
 
 ```bash
 node index.js
 ```
+After initiating the app with the command, it will prompt the user to provide inputs fro generating html file for team profiles.
 
+The app always starts with questions for Team Manager's profile. After inputing Manager's details, user can add other employee(s)/team member(s), engineer and intern. 
+
+After adding all team members, select exit to generate Team Profile html page. 
+
+In the same folder, "myTeam.html" file will be generated.
+
+
+There are also test cases for class employee, manager, engineer, and intern under 'Test' directory. To run the test, use the following command:
+
+```bash
+npm test
+```
+
+![test run](./Assets/jest_test.png)
 
 
 ## Credits
