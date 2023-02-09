@@ -39,24 +39,14 @@ WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 ```
 
-## Mock-Up
-
-The following image shows a mock-up of the generated HTML’s appearance and functionality:
-
-![HTML webpage titled “My Team” features five boxes listing employee names, titles, and other key info.](./Assets/10-object-oriented-programming-homework-demo.png)
-
-The styling in the image is just an example, so feel free to add your own.
-
 ## Description
  * [Link to Video Demonstration](https://drive.google.com/file/d/1YzEcorJo3RD_Yfl7YnDkvRv42mB-kzx1/view)
 
-When the user run the application with command, bash terminal will come up with questions needed for generating html of team profiles. It starts with questions for Team Manager's profile and user must provide inquired inputs.
+When the user runs the application with command, bash terminal will come up with questions needed for generating html of team profiles. It starts with questions for Team Manager's profile and user must provide inquired inputs.
 
 ![Initial run_Manager profile](./Assets/initial.png)
 
 After the user provides Manager's profile, they are given options to add other team members (either engineer or intern) or to exit. If the user choose to add another member(s), just like Manager's profile, user needs to provide information for team member's profile.
-
-![options to add team member(s)](./Assets/add_option.png)
 
 Below are the information asked for each of the team members:
 
@@ -69,6 +59,10 @@ After providing all information, user can choose 'exit' to exit the app and gene
 ![Exit app](./Assets/add_option.png)
 ![generated team profile html](./Assets/gnerated_html.png)
 
+
+(Example myTeam.html file is lncluded in main directory.)
+
+
 ## How to Use
 The application will be invoked by using the following command:
 
@@ -76,18 +70,15 @@ The application will be invoked by using the following command:
 node index.js
 ```
 
-After initiating the app with the command, it will prompt the user to provide inputs for generating html file for team profiles.
+* After initiating the app with the command, it will prompt the user to provide inputs for generating html file for team profiles.
 
-The app always starts with questions for Team Manager's profile. After inputing Manager's details, then user can add other employee(s)/team member(s), such as engineer and intern. 
+* The app always starts with questions for Team Manager's profile. After inputing Manager's details, then user can add other employee(s)/team member(s), such as engineer and intern. (User must provide details for every inputs, correct id (digits), and valid email address.)
 
-(User must provide details for every inputs, correct id (digits), and valid email address.)
+* After adding all team members, select exit to generate Team Profile html page. 
 
-After adding all team members, select exit to generate Team Profile html page. 
+* In the same folder, "myTeam.html" file will be generated.
 
-In the same folder, "myTeam.html" file will be generated.
-
-
-There are also test cases for class employee, manager, engineer, and intern under 'Test' directory. To run the test, use the following command:
+* There are also test cases for class employee, manager, engineer, and intern under 'Test' directory. To run the test, use the following command:
 
 ```bash
 npm test
