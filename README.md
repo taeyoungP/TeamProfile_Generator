@@ -60,7 +60,7 @@ After providing all information, user can choose 'exit' to exit the app and gene
 ![generated team profile html](./Assets/gnerated_html.png)
 
 
-(Example myTeam.html file is lncluded in main directory.)
+(Example myTeam.html file is lncluded in 'dist' directory.)
 
 
 ## How to Use
@@ -76,7 +76,7 @@ node index.js
 
 * After adding all team members, select exit to generate Team Profile html page. 
 
-* In the same folder, "myTeam.html" file will be generated.
+* "myTeam.html" file will be **generated in 'dist' folder**.
 
 * There are also test cases for class employee, manager, engineer, and intern under 'Test' directory. To run the test, use the following command:
 
